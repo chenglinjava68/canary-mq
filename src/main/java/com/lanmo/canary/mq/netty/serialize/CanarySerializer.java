@@ -21,4 +21,13 @@ public interface CanarySerializer {
     */
    public void encode(final ByteBuf out, final Object message) throws IOException;
 
+   /**
+    * 解码
+    * @param body
+    * @return
+    * @throws IOException
+    */
+   public Object decode(byte[] body) throws IOException;
+
+
 }
