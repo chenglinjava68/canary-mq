@@ -15,6 +15,8 @@
         <lombok.version>1.16.14</lombok.version>
         <common.pool.version>1.6</common.pool.version>
         <kryo.version>2.24.0</kryo.version>
+        <curator.version>2.11.1</curator.version>
+        <disruptor.version>3.3.6</disruptor.version>
     </properties>
 
     <dependencies>
@@ -86,6 +88,19 @@
             <groupId>com.esotericsoftware.kryo</groupId>
             <artifactId>kryo</artifactId>
             <version>${kryo.version}</version>
+        </dependency>
+        <!-- Apache对Zookeeper操作的工具类 -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>${curator.version}</version>
+        </dependency>
+
+        <!-- disruptor队列 -->
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>${disruptor.version}</version>
         </dependency>
     </dependencies>
 
